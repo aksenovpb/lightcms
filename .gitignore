@@ -1,0 +1,42 @@
+led / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Sqlite
+*.sqlite3
+
+# Media directory
+media/
+
+# IDE
+.idea/
+
+# Django stuff:
+*.log
+local_settings.py
+
+# dotenv
+.env
+
+# virtualenv
+venv/
+ENV/

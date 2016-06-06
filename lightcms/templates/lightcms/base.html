@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load lightcms_tags %}
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+    <link rel="icon" href="{{ STATIC_URL }}images/favicon.ico">
+	<link href="{{ STATIC_URL }}lightcms/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+{% lightcms_toolbar %}
+
+<div class="wrapper">
+
+	<header class="header">
+		{% light_cms_render_block header %}
+	</header><!-- .header-->
+
+	<div class="middle">
+
+		<div class="container">
+			<main class="content">
+				{% light_cms_render_block content %}
+			</main><!-- .content -->
+		</div><!-- .container-->
+
+		<aside class="left-sidebar">
+			{% light_cms_render_block left_sidebar %}
+		</aside><!-- .left-sidebar -->
+
+		<aside class="right-sidebar">
+			{% light_cms_render_block right_sidebar %}
+		</aside><!-- .right-sidebar -->
+
+	</div><!-- .middle-->
+
+	<footer class="footer">
+		{% light_cms_render_block footer %}
+	</footer><!-- .footer -->
+
+</div><!-- .wrapper -->
+
+</body>
+</html>
